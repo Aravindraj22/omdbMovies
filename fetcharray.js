@@ -1,0 +1,57 @@
+let employees=[
+    {
+        empno:"7521",
+        ename:"ward",
+        job:"manager",
+        hiredate:"17-DEC-81",
+        sal:1000,
+        dept:40
+    },
+    {
+        empno:"7521",
+        ename:"ward",
+        job:"manager",
+        hiredate:"17-DEC-81",
+        sal:1000,
+        dept:40
+    },
+    {
+        empno:"7521",
+        ename:"ward",
+        job:"manager",
+        hiredate:"17-DEC-81",
+        sal:1000,
+        dept:40
+    },
+    {
+        empno:"7521",
+        ename:"ward",
+        job:"manager",
+        hiredate:"17-DEC-81",
+        sal:1000,
+        dept:40
+    },
+    {
+        empno:"7521",
+        ename:"ward",
+        job:"manager",
+        hiredate:"17-DEC-81",
+        sal:1000,
+        dept:40
+    }
+]
+let tbody=document.getElementById('tbody');
+
+for(let employee of employees) {
+    tbody.innerHTML+= 
+    `
+    <tr>
+                <td>${employee.empno}</td>
+                <td>${employee.ename}</td>
+                <td>${employee.job}</td>
+                <td>${employee.hiredate}</td>
+                <td>${employee.sal}</td>
+                <td>${employee.dept}</td>
+    </tr>
+    `
+}
